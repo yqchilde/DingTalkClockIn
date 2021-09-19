@@ -1,0 +1,66 @@
+[
+  {
+    "label": "[非必填] 公司名",
+    "name": "companyName",
+    "placeholder": "如果你的钉钉加入了多个公司，请填写你打卡的公司名"
+  },
+  {
+    "label": "[非必选] 打卡规则，跳过节假日/周末",
+    "name": "clockRules",
+    "type": "select",
+    "options": {
+      "rule_0": "请选择",
+      "rule_1": "跳过法定节假日",
+      "rule_2": "跳过周末（双休）",
+      "rule_3": "跳过周末（单休）",
+      "rule_4": "跳过法定节假日及周末（双休）",
+      "rule_5": "跳过法定节假日及周末（单休）"
+    }
+  },
+  {
+    "label": "上班打卡时间范围",
+    "name": "clockInRange",
+    "placeholder": "07:00-09:00",
+    "validation": "required"
+  },
+  {
+    "label": "下班打卡时间范围",
+    "name": "clockOutRange",
+    "placeholder": "18:00-24:00",
+    "validation": "required"
+  },
+  {
+    "label": "[非必填] 钉钉登录账号",
+    "name": "dingAccount"
+  },
+  {
+    "label": "[非必填] 钉钉登录密码",
+    "name": "dingPassword",
+    "type": "password"
+  },
+  {
+    "label": "[非必填] 手机解锁密码，仅支持数字密码解锁（不填则表示上滑即解锁）",
+    "name": "phoneUnlockPassword",
+    "type": "password",
+    "placeholder": "例：123456",
+    "validation": "number"
+  },
+  {
+    "label": "[非必填] 停顿时间：默认30秒，用于等待各页面载入（秒）",
+    "name": "waitingTimeDelay",
+    "validation": "number"
+  },
+  {
+    "label": "[非必填] 通知推送，QMsg Key（https://qmsg.zendee.cn）",
+    "name": "notifyForQMsg"
+  },
+  {
+    "label": "调试模式：将会在屏幕上显示日志窗口",
+    "name": "debug",
+    "type": "select",
+    "options": {
+      "model_0": false,
+      "model_1": true
+    }
+  }
+]
